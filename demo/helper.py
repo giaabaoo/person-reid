@@ -1,18 +1,17 @@
 import os
 
-import torch.optim
 import torch.utils.data
 import torch.utils.data.distributed
 
-from ..lib.config import cfg
-from ..lib.engine.inference import inference_one_sample
-from ..lib.models.model import build_model
-from ..lib.data import make_data_loader
+from lib.config import cfg
+from lib.engine.inference import inference_one_sample
+from lib.models.model import build_model
+from lib.data import make_data_loader
 
-from ..lib.utils.checkpoint import Checkpointer
-from ..lib.utils.comm import get_rank
-from ..lib.utils.directory import makedir
-from ..lib.utils.logger import setup_logger
+from lib.utils.checkpoint import Checkpointer
+from lib.utils.comm import get_rank
+from lib.utils.directory import makedir
+from lib.utils.logger import setup_logger
 from PIL import Image
 import json
 from nltk.tokenize import word_tokenize
