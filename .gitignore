@@ -1,0 +1,7 @@
+*.pyc
+
+__pycache__/
+condor_log/
+.cache/
+.nv/
+docker_stderror
