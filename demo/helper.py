@@ -15,7 +15,9 @@ from lib.utils.logger import setup_logger
 from PIL import Image
 import json
 from nltk.tokenize import word_tokenize
+import nltk
 
+nltk.download('punkt')
 
 def predict_results(image, text):
     config_file = "../configs/cuhkpedes/moco_gru_cliprn50_ls_bs128_2048.yaml"
