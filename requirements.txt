@@ -21,4 +21,4 @@ typing_extensions==4.0.1
 virtualenv==20.10.0
 yacs==0.1.8
 zipp==3.6.0
-nltk=='3.7'
+nltk==3.7
