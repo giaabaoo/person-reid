@@ -1,6 +1,5 @@
 import numpy as np
 import streamlit as st
-from matplotlib import pyplot as plt
 import torch
 from demo.main import *
 plt.rcParams["figure.figsize"] = (10, 7)
