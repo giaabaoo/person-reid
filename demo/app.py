@@ -1,7 +1,6 @@
 import numpy as np
 import streamlit as st
 import torch
-from demo.main import *
 plt.rcParams["figure.figsize"] = (10, 7)
 from PIL import Image
 from helper import predict_results
