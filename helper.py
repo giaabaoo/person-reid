@@ -36,7 +36,7 @@ def predict_results(image, text):
     output_dir = os.path.join(
         cfg.ROOT, "./output", "/".join(config_file.split("/")[-2:])[:-5]
     )
-    checkpoint_file = "./pretrained/moco_gru_cliprn50_ls_bs128_2048.pth"
+    checkpoint_file = "./lfs_folder/pretrained/moco_gru_cliprn50_ls_bs128_2048.pth"
     checkpointer = Checkpointer(model, save_dir=output_dir)
     _ = checkpointer.load(checkpoint_file)
     
@@ -44,7 +44,7 @@ def predict_results(image, text):
     with open("./inference_utils/onehot_test.json", "r") as f:
         onehot_dict = json.load(f)
     
-    all_image_path = "./datasets/CUHK-PEDES/imgs"
+    all_image_path = "./lfs_folder/datasets/CUHK-PEDES/imgs"
     words_list = [word for word in word_tokenize(text) if word.isalpha()]    
     onehot = [onehot_dict[i.lower()] for i in words_list]
     
