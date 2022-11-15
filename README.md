@@ -3,6 +3,9 @@
 ## Descriptions (TO BE UPDATED)
 This repo performs an inference module for the [TextReID model](https://github.com/brandonhanx/textreid) along with a demo using Streamlit to retrieve multi-view re-identification with text descriptions.
 
+![TextReID app](demo/app.gif)
+
+
 ## Citation
 ```
 @inproceedings{han2021textreid,
