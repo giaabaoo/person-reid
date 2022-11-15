@@ -1,7 +1,9 @@
 # Person re-identification with text descriptions
 
+## Descriptions (TO BE UPDATED)
+This repo performs an inference module for the [TextReID model](https://github.com/brandonhanx/textreid) along with a demo using Streamlit to retrieve multi-view re-identification with text descriptions.
+
 ## Citation
-If you find this project useful for your research, please use the following BibTeX entry.
 ```
 @inproceedings{han2021textreid,
   title={Text-Based Person Search with Limited Data},
